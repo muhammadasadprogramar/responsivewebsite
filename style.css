@@ -1,0 +1,289 @@
+@font-face {
+  font-family: poppins;
+  src: url(Poppins/Poppins-Medium.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+}
+
+.main {
+  background-image: url(images/image2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
+  height: 90vh;
+}
+
+/* Navbar */
+
+.main > .nav {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+
+.main > .nav > .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.main > .nav > ul {
+  display: flex;
+  align-items: center;
+}
+
+.main > .nav > ul > .home {
+  color: #fd4c82;
+}
+
+.main > .nav > ul > li {
+  list-style: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+  margin-right: 4rem;
+}
+
+.main > .nav > ul > i {
+  display: none;
+}
+
+.main > .nav > ul > li:hover {
+  color: #fd4c82;
+}
+
+.main > .nav > ul > button {
+  width: 9vw;
+  height: 2.5rem;
+  border-radius: 1.5em;
+  background-color: #fd4c82;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Main Content */
+
+.main > .content {
+  width: 70%;
+  height: 65vh;
+  text-align: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: #fff;
+  padding-top: 130px;
+}
+
+.main > .content > p {
+  font-size: 25px;
+}
+
+.main > .content > hr {
+  width: 13%;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #fd4c82;
+  border: none;
+  border-radius: 1em;
+  margin-top: 13px;
+}
+
+.main > .content > h1 {
+  font-size: 60px;
+  margin-top: 19px;
+}
+
+.main > .content > .btn1 {
+  width: 13vw;
+  height: 8vh;
+  background-color: #fd4c82;
+  outline: none;
+  border: none;
+  border-radius: 2em;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* boxes */
+
+.boxes {
+  width: 100%;
+  height: 127vh;
+  text-align: center;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+.boxes > h1 {
+  font-size: 45px;
+  color: #363636;
+}
+
+.boxes > hr {
+  width: 13%;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #fd4c82;
+  border: none;
+  border-radius: 1em;
+  margin-top: 3px;
+}
+
+.boxes > .two-box {
+  width: 80%;
+  height: 80vh;
+  margin: 0 auto;
+  margin-top: 60px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.boxes > .two-box > .mountain {
+  width: 45%;
+  height: 80vh;
+  box-sizing: border-box;
+}
+
+.boxes > .two-box > .mountain > .img img {
+  width: 100%;
+  height: 45vh;
+}
+
+.boxes > .two-box > .mountain > h3 {
+  color: #363636;
+  margin-top: 25px;
+}
+
+.boxes > .two-box > .mountain > p {
+  margin-top: 17px;
+}
+
+.boxes > .two-box > .mountain > button {
+  width: 10vw;
+  height: 6.3vh;
+  background-color: #fd4c82;
+  outline: none;
+  border: none;
+  border-radius: 1.5em;
+  cursor: pointer;
+  color: #fff;
+  margin-top: 20px;
+}
+
+@media (max-width: 420px) {
+  .main {
+    height: 70vh;
+  }
+  .main > .nav {
+    padding: 0 30px;
+    height: 70px;
+  }
+
+  .main > .nav > .logo {
+    font-size: 16px;
+  }
+
+  .main > .nav > ul > li {
+    display: none;
+  }
+
+  .main > .nav > ul > i {
+    display: block;
+    font-size: 30px;
+    color: #fd4c82;
+    font-weight: 600;
+  }
+
+  .main > .nav > ul > button {
+    display: none;
+  }
+
+  .main > .content {
+    padding-top: 120px;
+  }
+
+  .main > .content > h1 {
+    font-size: 35px;
+    line-height: 47px;
+    margin-top: 35px;
+  }
+
+  .main > .content > hr {
+    width: 70px;
+  }
+
+  .main > .content > p {
+    font-size: 20px;
+  }
+
+  .main > .content > .btn1 {
+    width: 60%;
+    height: 6vh;
+    margin-top: 25px;
+  }
+
+  /* Boxes */
+
+  .boxes {
+    padding-top: 55px;
+    height: 147vh;
+  }
+
+  .boxes > h1 {
+    font-size: 30px;
+  }
+
+  .boxes > hr {
+    width: 50%;
+    margin-top: 15px;
+  }
+
+  .boxes > .two-box {
+    flex-wrap: wrap;
+    height: 120vh;
+    margin-top: 35px;
+  }
+
+  .boxes > .two-box > .mountain {
+    width: 100%;
+    box-shadow: 0.8px 0.8px 8px #6e6e6e;
+    height: 55vh;
+    border-radius: 15px;
+  }
+
+  .boxes > .two-box > .mountain > h3 {
+    margin-top: 23px;
+  }
+
+  .boxes > .two-box > .mountain > .img > img {
+    height: 40%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .boxes > .two-box > .mountain > p {
+    font-size: 12px;
+  }
+
+  .boxes > .two-box > .mountain > button {
+    width: 50%;
+    height: 5.5vh;
+  }
+}
